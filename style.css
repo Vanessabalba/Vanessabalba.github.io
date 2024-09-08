@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif margin: 0;
+    background-color: rgb(142, 68, 173);
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), alpha)
+}
+
+button:hover {
+    background-color: rgb(36, 104, 136);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-acent {
+    font-family: "Great Vibes", cursive;
+    color: rgb(156, 154, 247);
+}
+
+header {
+    background-color: rgb(245, 225, 218);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 2em;
+    font-family: "Great Vibes", cursive;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12 px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover {
+    color: rgb(41, 139, 146);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: aliceblue;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./imagenes/ilustracion0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button {
+    font-size: 1.5em;
+}
+
+#que-hago {
+    background-color: rgb(182, 103, 103);
+    color: white;
+    text-align: center;
+}
+
+#que-hago .container {
+    padding: 100px 12px;
+}
+
+#que-hago .h2 {
+    margin: 0;
+    font-size: 3.2em;
+}
+
+#que-hago p {
+    display: none;
+}
+
+#que-hago .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 70px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./imagenes/ilustracion02.jpeg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./imagenes/retrato.jpeg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./imagenes/tambor1.jpeg);
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+    color: white;
+}
+
+#caracteristicas li {
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel h2 {
+    text-align: center;
+    color: rgb(43, 10, 56);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+#cotizaya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    height: 50vh;
+    color: aliceblue;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./imagenes/ilustracion01.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#cotizaya button {
+    font-size: 3vh;
+    margin: 10px;
+}
+
+#cotizaya h2 {
+    font-size: 5vh;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+footer {
+    background-color: rgb(240, 177, 177)
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(31, 22, 22);
+}
+
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media (min-width:780px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-botton: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    header a {
+        margin: 10px;
+    }
+
+    #quiensoy .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #quiensoy .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(28, 5, 49);
+    }
+
+    #quiensoy .h2 {
+        margin-top: 0px;
+        font-size: 6em;
+    }
+
+    #quiensoy .img-container {
+        background-image: url(./imagenes/sobremi.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 350px;
+        margin: 15px;
+        border-radius: 15px;
+
+    }
+
+    #que-hago .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #que-hago p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #que-hago .h3 {
+        margin-top: 0;
+    }
+
+    #que-hago .carta {
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #caracteristicas {
+        background-image: url(./imagenes/maceta3.jpeg);
+        background-repeat: no-repeat;
+        background-size: 400px 500px;
+        background-position: calc(100vw - 500px) 120px;
+        margin-bottom: 50px;
+    }
+
+    #caracteristicas .container {
+        text-align: left;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 3em;
+    }
+}
+
+@media (win-width: 1100px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 1950px);
+    }
+}
